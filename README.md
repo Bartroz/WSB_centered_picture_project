@@ -17,10 +17,10 @@ And below I put a quick installation quide:
 2. Open this in VS code,  
 3. Open terminal in Vs ,  
 4. Write 'npm init' and press enter,  
-5. After that should appear folder named 'dist,  
+5. After that should appear folder named 'dist',  
 6. Put file 'index.html' to this folder,  
 7. Write in terminal 'npm run build',  
-8. After complete run write in terminal 'no run start:dev',  
+8. After complete run write in terminal 'npm run start:dev',  
 9. Open your browser (recommended in incognito mode),  
 10. Write in url bar 'localhost:9000',  
 11. Enjoy my simple website!  
