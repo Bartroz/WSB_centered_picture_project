@@ -13,9 +13,9 @@ In this project I've used:
 
 And below I put a quick installation quide:
 
-1.Download all
-2.Open this in Vs code
-3.Open terminal
+1.Download all files form repo
+2.Open this in VS code
+3.Open terminal in Vs 
 4.Write 'npm init' and press enter
 5.After that should appear folder named 'dist'
 6.Put file 'index.html' to this folder
