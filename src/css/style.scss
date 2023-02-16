@@ -1,7 +1,6 @@
 @use './fonts' as *;
 @use './colors' as *;
 
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -27,7 +26,7 @@ body {
 	&__text {
 		&__h1 {
 			&--fontSize {
-				font-size: 2.5rem;
+				font-size: 2rem;
 				font-weight: $font400;
 				letter-spacing: 1px;
 				margin: 5px 0;
@@ -36,7 +35,7 @@ body {
 
 		&__p {
 			&--fontSize {
-				font-size: 1.5rem;
+				font-size: 1rem;
 				color: $colorThird;
 				padding-bottom: 5px;
 			}
@@ -87,12 +86,12 @@ body {
 	border-top: 2px solid $colorFourth;
 	background-color: $colorSixth;
 	color: $colorFirst;
+	font-size: 1rem;
 
 	&__paragraph {
 		&--fontSize {
-			font-size: 1.1rem;
-			margin-bottom: 5px;
 			font-weight: $font300;
+			margin-bottom: 5px;
 		}
 		&__author {
 			&--style {
@@ -120,5 +119,25 @@ body {
 		i {
 			margin-right: 5px;
 		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.header {
+		&__text {
+			&__h1 {
+				&--fontSize {
+					font-size: 2.3rem;
+				}
+			}
+			&__p {
+				&--fontSize {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	.footer {
+		font-size: 1.1rem;
 	}
 }
