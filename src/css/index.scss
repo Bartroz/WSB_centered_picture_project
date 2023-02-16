@@ -1,0 +1,64 @@
+@import './variables';
+
+$small: 'screen and (max-width:320px)';
+$medium: 'screen and (max-width:320px)';
+$big: 'screen and (max-width:320px)';
+
+@mixin center-flex($param1, $param2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: $param1;
+	align-items: $param2;
+}
+
+// .center {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+.about {
+    
+	@media #{$small} {
+		background-color: red;
+	}
+
+	@media #{$medium} {
+		background-color: green;
+	}
+
+	@media #{$big} {
+		background-color: yellow;
+	}
+
+	background-color: lawngreen;
+	border: $customBorder;
+	// @extend .center;
+	// @include center-flex(center, center);
+
+	&__description {
+		color: blue;
+		font-size: $fontSize;
+
+		&__text1 {
+			&--color {
+				color: red;
+			}
+		}
+		&__text2 {
+			&--font {
+				font-size: $fontSize;
+			}
+		}
+	}
+
+	&__link {
+		&--hov {
+			color: blue;
+			&:hover {
+				color: pink;
+			}
+		}
+	}
+}
